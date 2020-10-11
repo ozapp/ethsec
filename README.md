@@ -1,5 +1,5 @@
 # solc
-A docker image template for Solidity with Smart Contract Toolkit like Truffle, OpenZeppelin and ganache-cli.
+A Docker container preconfigured with Trail of Bits and OpenZeppelin tools.
 
 ## Quick start
 
@@ -10,12 +10,17 @@ docker run --name ozapp-solc -v $(pwd):/solc \
            -it --rm --entrypoint bash ozapp/solc
 ```
 
-## Start a simulate full client
+## Sample of Trail of Bits tools command
 ```
-npm start
+etheno --manticore --ganache --truffle
+etheno --echidna
+solc-select 0.7.2
+crytic-compile
+slither tests/uninitialized.sol
+python3 rattle-cli.py --input inputs/kingofether/KingOfTheEtherThrone.bin -O
 ```
 
-## Sample of oz command
+## Sample of OpenZeppelin command
 ```
 oz init
 oz compile

@@ -1,7 +1,8 @@
 {
   "name": "ozapp-solc",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Docker container preconfigured with Trail of Bits and OpenZeppelin tools.",
+  "repository": "https://github.com/ozapp/solc",
   "scripts": {
     "start": "ganache-cli --deterministic & ",
     "test": "mocha --exit --recursive test"
