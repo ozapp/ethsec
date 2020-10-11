@@ -1,0 +1,17 @@
+{
+  "name": "ozapp-solc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ganache-cli --deterministic & ",
+    "test": "mocha --exit --recursive test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@openzeppelin/test-environment": "^0.1.5",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
