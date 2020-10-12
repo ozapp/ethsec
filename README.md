@@ -1,4 +1,4 @@
-# solc
+# Ozapp EthSec
 A Docker container preconfigured with Trail of Bits and OpenZeppelin tools.
 
 ## Quick start
