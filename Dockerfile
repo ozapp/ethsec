@@ -6,9 +6,9 @@ USER root
 RUN npm install -g @openzeppelin/cli
 RUN oz --version
 
+USER ethsec
+WORKDIR /home/ethsec
 COPY ./package.json /home/ethsec/
-
-RUN cd /home/ethsec && npm install && npm audit fix
 
 EXPOSE 8545
 EXPOSE 30303

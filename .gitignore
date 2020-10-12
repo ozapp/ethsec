@@ -105,3 +105,4 @@ dist
 
 .openzeppelin/.session
 build
+.bash_history
